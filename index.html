@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exoplanet Data Visualization</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:;base64,iVBORwOKGO=" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>    
+    <!-- Add HTML content, SVG drawing area, ... -->
+    <div class="grid-container">
+        <div id="header-block">
+            <h1>Exoplanet Data Visualization</h1>
+            <h2>Noah Shremshock</h2>
+            <p>Explore space outside our solar system by learning about distant planets!</p>
+            <p>Data used is publically available through the 
+                <a href="https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PS" target="_blank">NASA Exoplanet Archive</a>.</p>
+                <p>[Click the question marks (?) next to chart titles for more info]</p>
+        </div>
+        <svg id="starCount"></svg>
+        <svg id="planetCount"></svg>
+        <svg id="starType"></svg>
+        <svg id="discMethod"></svg>
+        <svg id="habitableZone"></svg>
+        <svg id="histogram"></svg>
+        <svg id="line"></svg>
+        <svg id="scatter"></svg>
+    </div>
+
+    <div id="tooltip"></div>
+
+    <!-- D3 bundle -->
+    <script src="js/d3.v6.min.js"></script>
+
+    <!-- Our JS code -->
+    <script src="js/main.js"></script>
+    <script src="js/barchart.js"></script>
+    <script src="js/histogram.js"></script>
+    <script src="js/linechart.js"></script>
+    <script src="js/scatterplot.js"></script>
+</body>
+</html>

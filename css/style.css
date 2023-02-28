@@ -1,0 +1,89 @@
+body { 
+    min-height: 100vh;
+    background-color: #f6eeee;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    gap: 5px;
+    grid-template-rows: 30vh 30vh 40vh;
+}
+
+#header-block {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 2;
+}
+
+#starCount {
+    grid-row: 1 / span 1;
+    grid-column: 5 / span 1;
+}
+
+#planetCount {
+    grid-row: 1 / span 1;
+    grid-column: 4 / span 1;
+}
+
+#starType {
+    grid-row: 1 / span 1;
+    grid-column: 6 / span 1;
+}
+
+#discMethod {
+    grid-row: 3 / span 1;
+    grid-column: 6 / span 1;
+}
+
+#habitableZone {
+    grid-row: 2 / span 1;
+    grid-column: 6 / span 1;
+}
+
+#histogram {
+    grid-row: 1 / span 1;
+    grid-column: 3 / span 1;
+}
+
+#line {
+    grid-row: 2 / span 1;
+    grid-column: 3 / span 3;
+}
+
+#scatter {
+    grid-row: 3 / span 1;
+    grid-column: 3 / span 3;
+}
+
+#tooltip {
+    position: absolute;
+    background: #f6eeee;
+    box-shadow: 3px 3px 3px 0px rgb(92 92 92 / 0.5);
+    border: 1px solid #dddddd;
+    min-width: 30px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 2px;
+    color: #333;
+}
+
+.bar {
+    shape-rendering: crispEdges;
+}
+
+.bar:hover {
+    stroke: #232323;
+}
+
+.point:hover {
+    stroke: #232323;
+}
+
+.tracker:hover {
+    fill:#dddddd;
+}
+
+.link {
+    color: blue;
+}
